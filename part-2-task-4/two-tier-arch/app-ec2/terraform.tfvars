@@ -1,0 +1,10 @@
+instance_ami = "ami-0aeeebd8d2ab47354"
+availability_zone = "us-east-1a"
+region="us-east-1"
+instance_type = "t2.micro"
+aws_security_group_id = ["sg-00b073fb55add1365"]
+subnet_id = "subnet-07ce73f483609ed84"
+root_device_size = "10"
+root_device_type = "gp2"
+associate_public_ip_address = true
+key="deployer-key"
