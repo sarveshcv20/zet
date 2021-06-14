@@ -1,0 +1,40 @@
+Solution created for Part-2
+
+Task 4:
+Create a Two tier application infrastructure using Terraform
+
+Created 3 folders --> 
+1. Modules
+2. network
+3. two-tier-arch
+
+I have divided Network & two-tier-arch into two different folders, this gives ease of use. We can also club all as a part of a single folder and use one config
+
+Modules - Stores all the modules, divided all components into modules for re-usability. 
+
+Network - This will intialise the required network infrastructure in aws cloud.
+This creates 
+VPC 
+Security Group's (app and db sg's)
+Subnet (Public and Private)
+NAT (service)
+Note: Output of resources are called and reused in downstream resources eg: vpc id is used by subnets and sg's.
+
+
+two-tier-arch - This will create two tier arch in aws and use the above created resources
+1. app 
+2. db
+
+Task 5
+Shell script to take third most CPU & Memory consuming process
+
+Note: The question was ambigious, so created two approaches
+
+1 - Provides two outputs - a. 3rd high cpu b. 3rd high memory
+2 - Provides single output - sorted with 3rd highest cpu and mem
+
+Task 6
+Write a kubernetes (preferably helm) template that deploys nginx with custom configuration and exposes services as NodePort
+
+Create nginx helm chart with service as nodeport and modified with custom configuration index.html 
+Created config-map with custom index html and mounted as nginx volume
