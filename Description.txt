@@ -36,5 +36,5 @@ Note: The question was ambigious, so created two approaches
 Task 6
 Write a kubernetes (preferably helm) template that deploys nginx with custom configuration and exposes services as NodePort
 
-Create nginx helm chart with service as nodeport and modified with custom configuration index.html 
+Created nginx helm chart with service as nodeport and modified with custom configuration index.html 
 Created config-map with custom index html and mounted as nginx volume
